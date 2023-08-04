@@ -1,0 +1,48 @@
+.hero-block {
+  color: $textWhite;
+  &__top-text {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 64px;
+      line-height: 88px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    font-size: 11px;
+    line-height: 14px;
+    color: $textWhite;
+
+    @include mobile {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}

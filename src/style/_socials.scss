@@ -1,0 +1,40 @@
+.socials {
+  padding-right: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include mobile {
+      gap: 20px;
+    }
+
+    @include tablet {
+      gap: 25px;
+    }
+  }
+
+  &__item {
+    color: $textWhite;
+    transition: color .3s ease-in-out;
+    &:hover {
+      color: #D3B47F;
+    }
+  }
+
+  &-icon {
+    width: 25px;
+    height: 25px;
+
+    @include mobile {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

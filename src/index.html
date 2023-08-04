@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/poppins-v20-latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-700.woff2" as="font" crossorigin>
+
+
+  <title>Testing work</title>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="hero">
+      <header class="hero__header header">
+        <div class="container header__container">
+          <img src="img/logo.svg" alt="логотип" class="header__logo">
+          <nav class="header__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"> À la carte</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Wijnkaart</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Lunchmenu</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+            <button class="navigation__button" aria-label="open menu"></button>
+          </nav>
+          <a href="tel:+3292825725" class="header__tel">
+          <span class="header__tel-icon">
+<!--            <img src="img/icon-tel.svg" alt="иконка телефона" class="header__tel-icon_el">-->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__svg">
+              <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 9C22 5.13 18.87 2 15 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+          </span>
+            <span class="header__tel-text">+32 9 282 57 25</span>
+          </a>
+        </div>
+      </header>
+      <div class="hero-block container">
+        <p class="hero-block__top-text">OPEN EVERYDAY
+          6AM - 9PM</p>
+        <h1 class="hero-block__title">A bad day with lunch is better than a good day without it.</h1>
+        <div class="hero-block__bottom">
+          <button class="hero-block__btn btn">Reserve a table</button>
+          <div class="hero-block__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials-icon">
+                    <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                    <path d="M14.4399 30H16.6799V25.28H20.2479V23.504H16.6799V20.64H21.3359V18.832H14.4399V30ZM25.1643 22.432V18.16H22.9243V30H25.1643V28.736C25.7083 29.504 26.7003 30.144 28.0923 30.144C30.3643 30.144 32.1403 28.304 32.1403 25.536C32.1403 22.768 30.3643 20.992 28.0923 20.992C26.7483 20.992 25.7083 21.616 25.1643 22.432ZM29.8523 25.536C29.8523 27.216 28.7163 28.176 27.5003 28.176C26.3003 28.176 25.1643 27.248 25.1643 25.568C25.1643 23.888 26.3003 22.96 27.5003 22.96C28.7163 22.96 29.8523 23.856 29.8523 25.536Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                    <path d="M16.4556 30H18.6956V18.832H16.4556V30ZM20.3327 25.536C20.3327 28.304 22.1247 30.144 24.3807 30.144C25.7727 30.144 26.7807 29.456 27.3087 28.688V30.064C27.3087 31.712 26.3487 32.416 25.1167 32.416C23.9967 32.416 23.1647 31.888 22.9407 31.088H20.7167C20.9407 33.12 22.6847 34.368 25.1807 34.368C28.0927 34.368 29.5647 32.464 29.5647 30.064V21.136H27.3087V22.4C26.7807 21.632 25.7727 20.992 24.3807 20.992C22.1247 20.992 20.3327 22.768 20.3327 25.536ZM27.3087 25.568C27.3087 27.248 26.1887 28.176 24.9567 28.176C23.7567 28.176 22.6207 27.216 22.6207 25.536C22.6207 23.856 23.7567 22.96 24.9567 22.96C26.1887 22.96 27.3087 23.888 27.3087 25.568Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                    <path d="M12.6448 20.64H15.6208V30H17.8608V20.64H20.8368V18.832H12.6448V20.64ZM24.0872 30H26.5192L28.1352 23.808L29.7512 30H32.1672L34.7592 21.136H32.6152L31.0472 27.872L29.3832 21.136H27.0152L25.3192 27.888L23.7512 21.136H21.4792L24.0872 30Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">
+                  <svg class="socials-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                    <path d="M19.2805 26.112V30H21.5205V26.112L25.2965 18.832H22.8005L20.4165 23.936L18.0165 18.832H15.4885L19.2805 26.112ZM26.9404 27.248C26.9404 29.28 28.0764 30 29.7724 30H31.1804V28.112H30.1404C29.4364 28.112 29.1964 27.856 29.1964 27.264V22.976H31.1804V21.136H29.1964V18.944H26.9404V21.136H25.8844V22.976H26.9404V27.248Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mobal-menu--wrapper">
+      <a href="#" class="mobal-menu__close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5556 10L19.3333 4.22222C20.2222 3.33333 20.2222 2 19.3333 1.22222L18.8889 0.777778C18 -0.111111 16.6667 -0.111111 15.8889 0.777778L10 6.44445L4.22222 0.666667C3.33333 -0.222222 2 -0.222222 1.11111 0.666667L0.666667 1.11111C-0.222222 2 -0.222222 3.33333 0.666667 4.11111L6.44445 10L0.666667 15.7778C-0.222222 16.6667 -0.222222 18 0.666667 18.7778L1.11111 19.3333C2 20.2222 3.33333 20.2222 4.11111 19.3333L10 13.5556L15.7778 19.3333C16.6667 20.2222 18 20.2222 18.7778 19.3333L19.2222 18.8889C20.1111 18 20.1111 16.6667 19.2222 15.8889L13.5556 10Z" fill="white"/>
+        </svg>
+      </a>
+      <nav class="mobal-menu">
+        <ul class="mobal-menu__list">
+          <li class="mobal-menu__item"><a href="#" class="mobal-menu__link" >À la carte</a></li>
+          <li class="mobal-menu__item"><a href="#" class="mobal-menu__link">Wijnkaart</a></li>
+          <li class="mobal-menu__item"><a href="#" class="mobal-menu__link">Lunchmenu</a></li>
+          <li class="mobal-menu__item"><a href="#" class="mobal-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <div class="block-2">
+        <div class="container block-2__container">
+          <ul class="block-2__list">
+            <li class="block-2__item">
+              <p class="block-2__item_text">Woensdag 12/01</p>
+              <div class="block-2__item_desc">
+                <span class="block-2__item_desc-text">Salade met Serrano</span>
+                <span class="block-2__item_desc-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+            </span>
+                <span class="block-2__item_desc-text">Steak Tartaar</span>
+              </div>
+            </li>
+            <li class="block-2__item">
+              <p class="block-2__item_text">Donderdag 13/01</p>
+              <div class="block-2__item_desc">
+                <span class="block-2__item_desc-text">Toast Roquefort</span>
+                <span class="block-2__item_desc-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+            </span>
+                <span class="block-2__item_desc-text">Penne met Kip en Prei</span>
+              </div>
+            </li>
+            <li class="block-2__item">
+              <p class="block-2__item_text">Vrijdag 14/01
+              </p>
+              <div class="block-2__item_desc">
+                <span class="block-2__item_desc-text">Verrassing van de Chef</span>
+                <span class="block-2__item_desc-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+            </span>
+                <span class="block-2__item_desc-text">Penne met Kip en Prei</span>
+              </div>
+            </li>
+            <li class="block-2__item">
+              <p class="block-2__item_text">Vrijdag 15/01
+              </p>
+              <div class="block-2__item_desc">
+                <span class="block-2__item_desc-text">Verrassing van de Chef</span>
+                <span class="block-2__item_desc-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+            </span>
+                <span class="block-2__item_desc-text">Penne met Kip en Prei</span>
+              </div>
+            </li>
+            <li class="block-2__item">
+              <p class="block-2__item_text">Vrijdag 16/01
+              </p>
+              <div class="block-2__item_desc">
+                <span class="block-2__item_desc-text">Verrassing van de Chef</span>
+                <span class="block-2__item_desc-circle ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" width="5" height="5" viewBox="0 0 5 5" fill="none">
+                <circle cx="2.5" cy="2.5" r="2.5" fill="#D3B47F"/>
+              </svg>
+            </span>
+                <span class="block-2__item_desc-text">Penne met Kip en Prei</span>
+              </div>
+            </li>
+          </ul>
+          <div class="block-2__right">
+            <img src="img/slairs.png" alt="стол" class="block-2__right-img block-2__right-img_1" width="323" height="486">
+            <img src="img/table.png" alt="стол" class="block-2__right-img block-2__right-img_2" width="323" height="486">
+            <div class="block-2__right_inner-block"></div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="container reviews__container swiper">
+          <div class="reviews__wrapper swiper-wrapper">
+            <div class="reviews__slide-item swiper-slide">
+              <div class="reviews__quotes">
+                <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+                </svg>
+              </div>
+              <h2 class="reviews__title">Goede service, lekker eten, toffe ambiance</h2>
+              <div class="reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+              </div>
+              <p class="reviews__author">ALAIN HEYNDRICKX</p>
+            </div>
+            <div class="reviews__slide-item swiper-slide">
+              <div class="reviews__quotes">
+                <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+                </svg>
+              </div>
+              <h2 class="reviews__title">Goede service, lekker eten, toffe ambiance</h2>
+              <div class="reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+              </div>
+              <p class="reviews__author">ALAIN HEYNDRICKX</p>
+            </div>
+            <div class="reviews__slide-item swiper-slide">
+              <div class="reviews__quotes">
+                <svg width="83" height="58" viewBox="0 0 83 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.1336 58C16.7095 58 13.6279 57.3937 10.8886 56.1812C8.28626 54.8339 6.2317 53.0151 4.7251 50.7247C3.35546 48.7038 2.19127 46.144 1.23252 43.0453C0.410737 39.8119 0 36.3763 0 32.7387C0 26.0023 1.71201 19.7375 5.13611 13.9443C8.69718 8.01627 14.1758 3.36818 21.5718 0L23.4207 3.63763C19.7227 5.25436 16.4355 7.67945 13.5593 10.9129C10.6831 14.0116 8.83413 17.3124 8.01234 20.8153C7.05359 24.1835 6.91668 27.417 7.6015 30.5157C10.8886 26.878 15.4083 25.0592 21.1608 25.0592C26.2285 25.0592 30.3374 26.4739 33.4876 29.3031C36.6377 32.1324 38.2128 36.1742 38.2128 41.4286C38.2128 46.4135 36.5008 50.4553 33.0767 53.554C29.7896 56.518 25.4752 58 20.1336 58ZM64.9208 58C61.4967 58 58.415 57.3937 55.6757 56.1812C53.0734 54.8339 51.019 53.0151 49.5124 50.7247C48.1428 48.7038 46.9786 46.144 46.0199 43.0453C45.1981 39.8119 44.7872 36.3763 44.7872 32.7387C44.7872 26.0023 46.4992 19.7375 49.9233 13.9443C53.4843 8.01627 58.9629 3.36818 66.359 0L68.208 3.63763C64.51 5.25436 61.2229 7.67945 58.3466 10.9129C55.4704 14.0116 53.6213 17.3124 52.7995 20.8153C51.8408 24.1835 51.7038 27.417 52.3887 30.5157C55.6758 26.878 60.1956 25.0592 65.9481 25.0592C71.0158 25.0592 75.1246 26.4739 78.2747 29.3031C81.4249 32.1324 83 36.1742 83 41.4286C83 46.4135 81.288 50.4553 77.8639 53.554C74.5768 56.518 70.2624 58 64.9208 58Z" fill="#D3B47F"/>
+                </svg>
+              </div>
+              <h2 class="reviews__title">Goede service, lekker eten, toffe ambiance</h2>
+              <div class="reviews__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.
+              </div>
+              <p class="reviews__author">ALAIN HEYNDRICKX</p>
+            </div>
+          </div>
+          <div class="reviews__arrows">
+            <button class="reviews__btn-arrow reviews__btn-prev">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="reviews-button-prev">
+                <path d="M43.8958 11.9L24.8792 30.9166C22.6333 33.1625 22.6333 36.8375 24.8792 39.0833L43.8958 58.1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="reviews__btn-arrow reviews__btn-next">
+              <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="reviews-button-next">
+                <path d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        </div>
+      <div class="block-3">
+        <div class="container block-3__container">
+          <div class="block-3__card card">
+            <div class="card__info">
+              <h3 class="card__title">LEKKER ETEN</h3>
+              <div class="card__line"></div>
+              <div class="card__desc">Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.</div>
+            </div>
+            <picture class="img-wrapper">
+              <source srcset="img/cart-Image01.jpg" media="(min-width: 768px)" width="670" height="560">
+              <img src="img/cart-Image01.jpg" alt="картинка" class="card__img" width="260" height="217">
+            </picture>
+          </div>
+          <div class="block-3__card card">
+            <picture class="img-wrapper">
+              <source srcset="img/cart-Image02.jpg" media="(min-width: 768px)" width="670" height="560">
+              <img src="img/cart-Image02.jpg" alt="картинка" class="card__img" width="260" height="217">
+            </picture>
+            <div class="card__info card__info-1">
+              <h3 class="card__title">TOFFE AMBIANCE</h3>
+              <div class="card__line"></div>
+              <div class="card__desc">Het creëren van de juiste sfeer is zeer belangrijk voor ons.
+                We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.
+              </div>
+            </div>
+          </div>
+          <div class="block-3__card card">
+            <div class="card__info">
+              <h3 class="card__title">LEKKERE COCKTAILS</h3>
+              <div class="card__line"></div>
+              <div class="card__desc">Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een
+                onvergetelijke cocktail, een goed gesprek en lekker eten.
+              </div>
+            </div>
+            <picture class="img-wrapper">
+              <source srcset="img/cart-Image03.jpg" media="(min-width: 768px)" width="670" height="560">
+              <img src="img/cart-Image03.jpg" alt="картинка" class="card__img" width="260" height="217">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="slider-bg">
+        <div class="container slider-bg__container">
+          <div class="slider-bg__wrapper">
+            <div class="slider-bg__left">
+              <h2 class="slider-bg__title">Sfeerfoto's</h2>
+              <div class="slider-bg__desc">De beste manier om de sfeer te ervaren is eens langskomen.
+                In tussentijd hebben we hier alvast wat foto’s voor je klaar.</div>
+            </div>
+            <div class="arraw-block">
+              <button class="slider-bg__btn-arrow">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="swiper-button-prev">
+                  <path d="M43.8958 11.9L24.8792 30.9166C22.6333 33.1625 22.6333 36.8375 24.8792 39.0833L43.8958 58.1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="slider-bg__btn-arrow">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="swiper-button-next">
+                  <path d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="slider">
+        <div class="container">
+          <div class="container slider__container swiper">
+            <ul class="slider__list swiper-wrapper">
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 1024px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 900px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 900px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 900px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 900px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+              <li class="slider__item swiper-slide">
+                <picture class="img-wrapper">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 900px)" width="970" height="646">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 768px)" width="740" height="492">
+                  <source srcset="img/slider-img.jpg" media="(min-width: 576px)" width="580" height="345">
+                  <img src="img/slider-img.jpg" alt="картинка слайд-1" class="slider__img" width="260" height="173">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="contacts-block">
+        <div class="container contacts-block__container">
+          <div class="contacts contacts-wrapper">
+            <h2 class="contacts__title contacts-block__title">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contacts__list-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                    <path d="M18.5 9C18.5 8.4 18.03 7.48 17.33 6.73C16.69 6.04 15.84 5.5 15 5.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 9C22 5.13 18.87 2 15 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contacts__list-info">
+                  <p class="contacts__subtitle">Phone Number</p>
+                  <p class="contacts__text">+32 9 282 57 25</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__list-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contacts__list-info">
+                  <p class="contacts__subtitle">Email</p>
+                  <p class="contacts__text">info@email.com</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__list-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.71 15.18L12.61 13.33C12.07 13.01 11.63 12.24 11.63 11.61V7.51001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contacts__list-info">
+                  <p class="contacts__subtitle">Opening Hours</p>
+                  <p class="contacts__text">Everyday from 6 AM - 9 PM</p>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__list-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 9.00002V15C22 17.5 21.5 19.25 20.38 20.38L14 14L21.73 6.27002C21.91 7.06002 22 7.96002 22 9.00002Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.73 6.27L6.26999 21.73C3.25999 21.04 2 18.96 2 15V9C2 4 4 2 9 2H15C18.96 2 21.04 3.26 21.73 6.27Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.38 20.38C19.25 21.5 17.5 22 15 22H9.00003C7.96003 22 7.06002 21.91 6.27002 21.73L14 14L20.38 20.38Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.24002 7.97997C6.92002 5.04997 11.32 5.04997 12 7.97997C12.39 9.69997 11.31 11.16 10.36 12.06C9.67001 12.72 8.58003 12.72 7.88003 12.06C6.93003 11.16 5.84002 9.69997 6.24002 7.97997Z" stroke="white" stroke-width="1.5"/>
+                    <path d="M9.0946 8.69995H9.10359" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="contacts__list-info">
+                  <p class="contacts__subtitle">Map Street</p>
+                  <p class="contacts__text">Jl. Raya Surabaya 2787</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="form contacts-wrapper" method="post">
+            <h2 class="form__title contacts-block__title">have any questions?</h2>
+            <div class="form__wrapper">
+              <label class="form__block form__block_name">
+                <div class="form__title">Имя</div>
+                <input type="text" class="form__input" name="name" placeholder="Input your name">
+              </label>
+              <label class="form__block form__block_email">
+                <div class="form__title">Email</div>
+                <input type="email" class="form__input" name="email" placeholder="Input your email">
+              </label>
+              <label class="form__block form__block_request">
+                <div class="form__title">Speciale Request</div>
+                <input type="text" class="form__input" name="request" placeholder="Input your special request">
+              </label>
+              <button class="form__button btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <section class="map">
+        <div class="container">
+          <div class="map__wrapper">
+            <picture class="map__img-wrapper">
+              <source srcset="img/map.jpg" media="(min-width: 1200px)" width="1170" height="547">
+              <source srcset="img/map.jpg" media="(min-width: 900px)" width="840" height="392">
+              <source srcset="img/map.jpg" media="(min-width: 768px)" width="709" height="331">
+              <source srcset="img/map.jpg" media="(min-width: 576px)" width="516" height="241">
+              <img src="img/map.jpg" alt="map" class="map__img" width="260" height="121">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <img src="img/logo-black.png" alt="Черный логотип" class="footer__logo" width="269" height="55">
+        <ul class="footer__social-list socials__list">
+          <li class="footer__social-item socials__item">
+            <a href="#" class="footer__social-link ">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                <path d="M14.4399 30H16.6799V25.28H20.2479V23.504H16.6799V20.64H21.3359V18.832H14.4399V30ZM25.1643 22.432V18.16H22.9243V30H25.1643V28.736C25.7083 29.504 26.7003 30.144 28.0923 30.144C30.3643 30.144 32.1403 28.304 32.1403 25.536C32.1403 22.768 30.3643 20.992 28.0923 20.992C26.7483 20.992 25.7083 21.616 25.1643 22.432ZM29.8523 25.536C29.8523 27.216 28.7163 28.176 27.5003 28.176C26.3003 28.176 25.1643 27.248 25.1643 25.568C25.1643 23.888 26.3003 22.96 27.5003 22.96C28.7163 22.96 29.8523 23.856 29.8523 25.536Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item socials__item">
+            <a href="#" class="footer__social-link">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                <path d="M16.4556 30H18.6956V18.832H16.4556V30ZM20.3327 25.536C20.3327 28.304 22.1247 30.144 24.3807 30.144C25.7727 30.144 26.7807 29.456 27.3087 28.688V30.064C27.3087 31.712 26.3487 32.416 25.1167 32.416C23.9967 32.416 23.1647 31.888 22.9407 31.088H20.7167C20.9407 33.12 22.6847 34.368 25.1807 34.368C28.0927 34.368 29.5647 32.464 29.5647 30.064V21.136H27.3087V22.4C26.7807 21.632 25.7727 20.992 24.3807 20.992C22.1247 20.992 20.3327 22.768 20.3327 25.536ZM27.3087 25.568C27.3087 27.248 26.1887 28.176 24.9567 28.176C23.7567 28.176 22.6207 27.216 22.6207 25.536C22.6207 23.856 23.7567 22.96 24.9567 22.96C26.1887 22.96 27.3087 23.888 27.3087 25.568Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item socials__item">
+            <a href="#" class="footer__social-link">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                <path d="M12.6448 20.64H15.6208V30H17.8608V20.64H20.8368V18.832H12.6448V20.64ZM24.0872 30H26.5192L28.1352 23.808L29.7512 30H32.1672L34.7592 21.136H32.6152L31.0472 27.872L29.3832 21.136H27.0152L25.3192 27.888L23.7512 21.136H21.4792L24.0872 30Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item socials__item">
+            <a href="#" class="footer__social-link">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="23.5" stroke="currentColor"/>
+                <path d="M19.2805 26.112V30H21.5205V26.112L25.2965 18.832H22.8005L20.4165 23.936L18.0165 18.832H15.4885L19.2805 26.112ZM26.9404 27.248C26.9404 29.28 28.0764 30 29.7724 30H31.1804V28.112H30.1404C29.4364 28.112 29.1964 27.856 29.1964 27.264V22.976H31.1804V21.136H29.1964V18.944H26.9404V21.136H25.8844V22.976H26.9404V27.248Z" fill="currentColor"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

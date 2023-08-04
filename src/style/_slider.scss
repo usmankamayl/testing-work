@@ -1,0 +1,14 @@
+.slider {
+  margin-bottom: 130px;
+  @include tablet {
+    margin-bottom: 100px;
+  }
+  &__container {
+    margin-top: -111px;
+    @include tablet {
+      margin-top: -223px;
+    }
+  }
+
+}
+

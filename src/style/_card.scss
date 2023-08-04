@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  gap: 30px;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__info {
+    min-width: 300px;
+    margin: 0 auto;
+    &-1 {
+      @include mobile {
+        order: -1;
+      }
+
+      @include tablet {
+        order: 1;
+      }
+    }
+  }
+
+
+  &__title {
+    font-size: 30px;
+    line-height: 58px;
+
+    @include mobile {
+      text-align: center;
+    }
+
+    @include tablet {
+      text-align: left;
+    }
+
+    @include desktop {
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 88px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+  }
+
+  &__desc {
+    color: $textBody;
+    @include mobile {
+      text-align: center;
+    }
+
+    @include tablet {
+      text-align: left;
+    }
+  }
+
+  &__line {
+    width: 108px;
+    height: 2px;
+    background-color: #D3B47F;
+    margin-bottom: 16px;
+
+    @include mobile {
+      margin: 0 auto 16px;
+    }
+
+    @include tablet {
+      margin-left: -54px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.reviews {
+  padding: 220px 0;
+  background-color: $blue;
+  &__container {
+    position: relative;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slide-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__quotes {
+    width: 83px;
+    height: 58px;
+    margin: 0 auto 34px;
+  }
+
+  &__title {
+    color: #D3B47F;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $textWhite;
+    padding: 0 15%;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__author {
+    color: #D3B47F;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 5.88px;
+    text-transform: uppercase;
+  }
+
+  &__arrows {
+    padding: 0 15px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    //display: flex;
+    //justify-content: space-between;
+    //align-items: center;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+
+  &__btn-arrow {
+    width: 48px;
+    height: 48px;
+    color: $textWhite;
+    transition: color .3s ease-in-out;
+    &:hover,&:active {
+      color: #D3B47F;
+    }
+  }
+
+  &__btn-prev {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+  }
+
+  &__btn-next {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+  }
+
+}

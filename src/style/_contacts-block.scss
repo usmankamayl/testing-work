@@ -1,0 +1,23 @@
+.contacts-block {
+  margin-bottom: 50px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 100px;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 30px;
+  }
+}
+

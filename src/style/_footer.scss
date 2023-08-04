@@ -1,0 +1,17 @@
+.footer {
+  padding-bottom: 70px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-list a{
+    color: $textBlack;
+    transition: color .3s ease-in-out;
+    &:hover {
+      color: #D3B47F;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.form {
+  &__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px;
+    grid-template-areas:
+    'name'
+    'email'
+    'request'
+    'btn'
+  ;
+    @include tablet {
+      grid-template-columns: 320px;
+    }
+
+    @include desktop {
+      grid-template-columns: 320px 320px;
+      grid-template-areas:
+    'name email'
+    'request request'
+    'btn .'
+    ;
+    }
+    gap: 20px;
+  }
+
+  &__block {
+
+    &_name {
+      grid-area: name;
+    }
+
+    &_email {
+      grid-area: email;
+    }
+
+    &_request {
+      grid-area: request;
+    }
+  }
+
+  &__button {
+    grid-area: btn;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $textWhite;
+
+    @include desktop {
+      width: 270px;
+      height: 100px;
+      justify-self: left;
+    }
+    @include tablet {
+      width: 200px;
+      height: 80px;
+      justify-self: center;
+    }
+  }
+
+  &__input {
+    padding: 0 16px;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #CCC;
+  }
+}

@@ -1,0 +1,47 @@
+.header {
+  line-height: 24px;
+  color: $textWhite;
+  margin-bottom: 154px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    width: 180px;
+    height: auto;
+    @include desktop {
+      width: 269px;
+      height: 55px;
+    }
+  }
+  &__nav {
+
+  }
+
+  &__tel-icon {
+    color: #D3B47F;
+    transition: color .3s ease-in-out;
+  }
+
+  &__tel {
+    display: none;
+    &-text {
+      transition: color .3s ease-in-out;
+    }
+    &:hover &-text {
+      color: #D3B47F;
+    }
+
+    &:hover &-icon {
+      color: $textWhite;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 11px;
+    }
+  }
+}
